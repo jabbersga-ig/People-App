@@ -5,15 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
-import { IgxIconModule, IgxAvatarModule, IgxButtonModule, IgxListModule, IgxInputGroupModule, IgxSelectModule } from 'igniteui-angular';
+import { IgxIconModule, IgxAvatarModule, IgxButtonModule, IgxListModule } from 'igniteui-angular';
 import { FormsModule } from '@angular/forms';
-import { MyInfoComponent } from './my-info/my-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    MyInfoComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -24,9 +22,7 @@ import { MyInfoComponent } from './my-info/my-info.component';
     IgxAvatarModule,
     IgxButtonModule,
     IgxListModule,
-    FormsModule,
-    IgxInputGroupModule,
-    IgxSelectModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
