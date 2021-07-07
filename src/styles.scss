@@ -12,14 +12,7 @@ html, body {
 
 @include igx-core();
 @include igx-typography();
-
-$custom-palette: igx-palette(
-  $primary: #2b579a,
-  $secondary: #2b579a,
-  $error: #a80000,
-  $success: #107c10,
-  $warn: #797673);
-@include igx-theme($palette: $custom-palette, $schema: $light-fluent-schema);
+@include igx-theme($palette: $default-palette, $schema: $light-schema);
 
 body {
   background: var(--igx-surface-500);
